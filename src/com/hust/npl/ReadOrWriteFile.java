@@ -26,9 +26,9 @@ public class ReadOrWriteFile {
 	}
 
 	// 读文件
-	public static String readFile(String filePath, String encoding){
+	public static String readFile(String filePath){
 		String content = new String();
-		
+		String encoding = "UTF-8";
         try {
                 File file=new File(filePath);
                 if(file.isFile() && file.exists()){ //判断文件是否存在

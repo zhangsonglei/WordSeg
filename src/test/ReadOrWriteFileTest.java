@@ -13,7 +13,7 @@ public class ReadOrWriteFileTest {
 		String encoding = "UTF-8";
 		String content = null;
 		
-		content = ReadOrWriteFile.readFile(readFilePath,encoding);
+		content = ReadOrWriteFile.readFile(readFilePath);
 		ReadOrWriteFile.writerFile(content, writeFilePath, true);
 	}
 

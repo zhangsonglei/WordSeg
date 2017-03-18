@@ -1,10 +1,12 @@
 package com.hust.npl;
 
+import java.util.StringTokenizer;
+
 public class WordSeg {
 	//将文本内容按照要求进行切分
-	public static String[] splitContent(String content, String condition) throws Exception {
-		String[] sentences = content.split(condition);
-		
+	public static StringTokenizer splitContent(String content) throws Exception {
+		//String[] sentences = content.split("[|.|。|、|；|「|」|？|！|，|（|）|%|：|——|-|=|“|”|‘|’]");
+		StringTokenizer sentences = new StringTokenizer(content,"%！●!:-：%︰ ——_（）— /()；;？?，,·。《》<>、“”’‘'");
 		return sentences;
 	}
 	
